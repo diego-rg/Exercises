@@ -1,0 +1,119 @@
+body {
+    background-color: #d8b9a9;
+    margin: 0px;
+}
+h1 {
+    color: yellow;
+    text-align: center;
+    font-size: 4em;
+    margin: 0px;
+    background-color: #3d2116;
+    padding-top: 0.2em;
+    padding-bottom: 0.2em;
+}
+h2{
+    font-family: 'Langar', cursive;
+    text-decoration: underline wavy red;
+}
+#login{
+    text-align: right;
+    border: 1px dashed #000000;
+    background-color: rgba(129, 68, 68, 0.664);
+}
+#survey{
+    padding: 0px;
+    margin: 0px;
+    height: 200px;
+    width: 300px;
+    background-color: #814444a9;
+    border: 2px solid #ffff00;
+}
+#mainav {
+    font-size: 1.3em;
+    list-style-type: none;
+    margin: 0px;
+    text-align: center;
+    background-color: #81553c;
+    padding-top: 0.2em;
+    padding-bottom: 0.2em;
+}
+#mainav li {
+    display: inline;
+    padding-left: 2em;
+    padding-right: 2em;
+}
+main {
+    padding: 1em;
+    min-height: calc(100vh - 350px);
+}
+ul {
+    list-style-type: circle;
+}
+ol {
+    list-style-type: lower-roman;
+}
+.fc{
+    display: flex;
+    flex-flow: row wrap;
+    margin: 1em;
+}
+article {
+    text-align: justify;
+    line-height: 200%;
+    flex: 2;
+}
+aside {
+    flex: 1;
+    margin: 1.5em;
+    background-image: url(brown-table.jpg);
+    border: 5px dotted #ffffff;
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 0.9rem;
+    padding: 1.5em;
+}
+table {
+    color: black;
+    border-collapse: collapse;
+    background-color: #f5deb3;
+    text-align: center;
+    width: 100%;
+}
+th, td {
+    vertical-align: middle;
+    padding: 0.5em;
+}
+tr:hover {
+    background-color: #e00404;
+}
+footer {
+    padding: 1em;
+    margin: 0px;
+    background-color: #81553c;
+    font-size: 0.9rem;
+    height: 5em;
+}
+img {
+    border: 5px outset #ffff00;
+}
+a:visited {
+    color: yellow;
+}
+a:hover {
+    background-color: red;
+}
+a:link {
+    text-decoration: none;
+    color: yellow;
+}
+button{
+    font-size: 2em;
+    background-color: gold;
+}
+#pEnjoy{
+    font-weight: 800;
+}
+#pScary{
+    font-size: 1.5em;
+    font-family: 'Hanalei Fill', cursive;
+}
