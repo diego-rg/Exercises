@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Forms Exercise</title>
+    </head>
+    <body>
+        <header>
+            <h1>Register</h1>
+        </header>
+       <main>
+           <!--Revisar se facer con label ou con for+id(diferencias?cambia algo cando fagamos backend?)-->
+            <form action="https://www.w3schools.com/tags/att_form_action.asp" method="POST">
+                <p>
+                    <label>First Name:<input name="firstName" type="text" placeholder="John" required></label>
+                    <label>Last Name:<input name="lastName" type="text" placeholder="Smith" required></label>
+                </p>
+                <p>
+                    <label>Male<input name="sexChoice" type="radio" value="MALE" required></label>
+                    <label>Female<input name="sexChoice" type="radio" value="FEMALE" required></label>
+                    <label>Other<input name="sexChoice" type="radio" value="OTHER" required></label>
+                </p>
+                <p>
+                    <!--Cambiar min/maxlength por imput pattern+required title?   pattern=".{5,10}"     required title="Mensaje de aviso que queiras poñer"-->
+                    <label>Email:<input name="email" type="email" placeholder="your email" required></label>
+                    <label>Password:<input name="password" type="password" minlength="5" maxlength="10" placeholder="your password" required></label>
+                </p>
+                <p>
+                    <label>Birthday:
+                        <select name="month" required>
+                            <option>Month</option>
+                            <option>January</option>
+                            <option>February</option>
+                            <option>March</option>
+                            <option>April</option>
+                            <option>May</option>
+                        </select>
+                        <select name="day" required>
+                            <option>Day</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                            <option>15</option>
+                        </select>
+                        <select name="year" required>
+                            <option>Year</option>
+                            <option>2000</option>
+                            <option>1995</option>
+                            <option>1990</option>
+                            <option>1985</option>
+                            <option>1980</option>
+                        </select>
+                    </label>
+                </p>
+                    <p>
+                        <label>I agree to the terms and conditions<input name="terms" type="checkbox" required></label>
+                    </p>
+                <button>Submit</button>
+            </form>
+       </main>
+    </body>
+</html>
