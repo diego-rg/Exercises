@@ -1,0 +1,42 @@
+* {
+    font-family: 'Parisienne', cursive;
+}
+
+body {
+    background-color: #033e80;
+    background-image: url("/images/background-blue.jpg");
+}
+
+h1 {
+    text-align: center;
+    color: lightblue;
+    font-size: 4rem;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    margin-bottom: 3%;
+}
+
+img {
+    background-image: none;
+    width: 480px;
+    max-width: 90vw;
+    height: auto;
+    padding: 0.5%;
+    border: 3px solid black;
+    margin: 0.5%;
+    background-color: lightblue;
+    transition-property: all;
+    transition-duration: 1s;
+    transition-timing-function: ease;
+    transition-delay: 0.2s;
+}
+
+img:hover {
+    transform: scale(1.3);
+}
