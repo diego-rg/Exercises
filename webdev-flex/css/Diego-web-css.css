@@ -1,0 +1,140 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    width: 90vw;
+    margin: 5% auto;
+}
+
+header {
+    background-color: #557a95;
+    width: 20%;
+    text-align: center;
+    margin: 2% auto;
+    order: 2;
+    border: 3px solid black;
+    border-radius: 50%;
+}
+
+h1 {
+    font-family: 'Dancing Script', cursive;
+    font-size: 4.5rem;
+}
+
+.pHeader {
+    font-family: 'Roboto', sans-serif;
+    font-size: 0.7rem;
+    font-weight: normal;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.upperMain {
+    order: 1;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-basis: 100%;
+}
+
+.upperLeft {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+    align-content: center;
+    flex-basis: 50%;
+}
+
+.upperRight {
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+    align-content: center;
+    flex-basis: 50%;
+}
+
+.lowerMain {
+    order: 3;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-basis: 100%;
+}
+
+.lowerLeft {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+    align-content: center;
+    flex-basis: 50%;
+}
+
+.lowerRight {
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+    align-content: center;
+    flex-basis: 50%;
+}
+
+ul {
+    text-align: justify;
+    list-style-type: square;
+    padding: 1rem;
+    margin: 0;
+}
+
+li {
+    margin: 0.5em;
+}
+
+.imgDiv {
+    width: 25%;
+    height: auto;
+}
+
+.textDiv {
+    width: 75%;
+    height: auto;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+@media only screen and (max-width: 600px) {
+    header {
+        order: -1;
+        width: 90%;
+    }
+    ul {
+        text-align: left;
+    }
+    .imgDiv {
+        width: 60%;
+    }
+    .textDiv {
+        width: 95%;
+    }
+    .upperLeft, .upperRight, .lowerLeft, .lowerRight {
+        flex-basis: 90%;
+        justify-content: center;
+    }
+  }
