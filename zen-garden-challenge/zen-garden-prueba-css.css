@@ -1,0 +1,226 @@
+* {
+    font-family: 'Noto Sans', sans-serif;
+}
+
+body {
+    background-image: url(images/backg-woods.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    margin: 0px;
+    line-height: 1.7rem;
+}
+
+header {
+    position: relative;
+    height: 300px;
+    width: 100%;
+    background-image: url(images/header-lake-woods.jpg);
+    background-size: cover;
+}
+
+h1 {
+    color: white;
+    padding: 0.3em 0.3em 0.1em 0.3em;
+    margin: 0px;
+    font-size: 2.2em;
+}
+
+h2 {
+    font-family: 'Dancing Script', cursive;
+    color: white;
+    padding: 0.1em 0.3em 0.1em 1.5em;
+    margin: 0px;
+    font-size: 1.4em;
+    font-weight: 400;
+}
+
+h3 {
+    font-weight: 400;
+}
+
+.grid-main {
+    display: grid;
+    gap: 3%;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 33%));
+    grid-template-rows: 1fr 1fr;
+}
+
+.requirements {
+    grid-column: 1/4;
+    text-align: justify;
+}
+
+.summary {
+    padding: 0.1em 1.2em 0.1em 0.1em;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    color: white;
+    text-align: right;
+}
+
+.summary p {
+    font-family: 'Dancing Script', cursive;
+    font-size: 0.9em;
+}
+
+.summary a {
+    text-decoration: none;
+    color:#c5dae8;
+    text-transform: uppercase;
+    font-size: 0.8em;
+}
+
+.preamble {
+    opacity: 0.9;
+    background-color: #dfe5e9;
+    text-align: center;
+    padding: 0.5% 5.5% 1.5% 5.5%;
+}
+
+h3 {
+    padding: 0.5em;
+    margin: 0;
+}
+
+.main-supporting {
+    margin: 0;
+    flex: 3;
+    text-align: justify;
+}
+
+.sidebar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: left;
+    margin: 0;
+    flex: 1;
+}
+
+.pPreamble {
+    margin-bottom: 0px;
+}
+
+footer {
+    background-color: #b7c6d1;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-size: 1.3em;
+    text-align: center;
+    padding: 1rem;
+    margin: 0rem;
+}
+
+.flexCont {
+    opacity: 0.9;
+    background-color:#edf0f2;
+    margin: auto;
+    padding: 1.5% 5.5%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+li {
+    list-style-type: none;
+}
+
+.sidebar h3 {
+    padding-left: 2em;
+}
+
+.main-supporting h3 {
+    padding-left: 0px;
+}
+
+.flexCont a {
+    color: black;
+}
+
+footer a {
+    font-family: 'Dancing Script', cursive;
+    text-decoration: none;
+    padding: 1em;
+    color: black;
+}
+
+footer a:hover {
+    color: white;
+    transform: scale(1.2);
+}
+
+.wrapper {
+    opacity: 0.9;
+    background-color: #dfe5e9;
+    padding: 1%;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-evenly;
+}
+
+.wrapper a {
+    font-size: 1.2rem;
+    font-family: 'Dancing Script', cursive;
+    text-decoration: none;
+    padding: 0;
+    color: black;
+}
+
+.wrapper ul {
+    padding: 5% 0 0 0 ;
+    margin: 0;
+}
+
+
+.wrapper a:hover {
+    color: white;
+}
+
+.wrapper h3 {
+    padding: 0;
+}
+
+@media only screen and (max-width: 600px) {
+    .preamble {
+        font-size: 0.9rem;
+        text-align: justify;
+        padding: 2.5% 5.5% 1.5% 5.5%;
+    }
+    .preamble h3 {
+        text-align: center;
+    }
+    .grid-main {
+        display: block;
+    }
+    .explanation {
+        padding-top: 5%;
+    }
+    .benefits {
+        padding-top: 5%;
+    }
+    .participation {
+        padding-top: 5%;
+    }
+    .requirements {
+        padding-top: 5%;
+    }
+    .wrapper {
+        display: block;
+        padding: 1.5% 5.5%;
+    }
+    .wrapper ul {
+        padding: 1% 0 0 0 ;
+    }
+    .design-selection {
+        padding-top: 5%;
+    }
+    .design-archives {
+        padding-top: 5%;
+    }
+    .zen-resources {
+        padding-top: 5%;
+    }
+}
