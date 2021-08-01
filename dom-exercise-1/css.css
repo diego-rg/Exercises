@@ -1,0 +1,12 @@
+/* https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/ */
+
+div {
+    display: inline-block;
+    text-align: center;
+    border: 1px solid black;
+    margin: 1px;
+}
+
+img {
+    display: block;
+}
