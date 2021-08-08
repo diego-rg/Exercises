@@ -1,0 +1,16 @@
+body {
+    background-color: rgb(199, 69, 69);
+    margin-top: 25vh;
+}
+
+h1 {
+    text-align: center;
+}
+
+main {
+    text-align: center;
+}
+
+#colorsButton {
+    margin-top: 10em;
+}
