@@ -59,7 +59,7 @@ let currentTime = (date = new Date()) => {
     seconds = seconds < 10 ? "0" + seconds : seconds;
 return `${hours}:${minutes}:${seconds}`;
 }
-curentTime();
+currentTime();
 
 /*----------------------------------------------------------------------------------------------------------------------------------------------*/
 
