@@ -1,0 +1,23 @@
+<%- include("partials/head.ejs") %><!--USO de parciales: corta o archivo en módulos para reutilizalos nas outras seccións e non ter que repetir todo-->
+
+<body>
+    
+    <%- include("partials/navbar.ejs") %>
+
+    <h1>Browsing the <%= name %> subreddit</h1><!--EJS: con = para mandar contido, sin el para lóxica-->
+    <h2><%= description %></h2>
+    <% for (let post of posts) { %>
+        <p><%= post.title %> by <%= post.author %> </p>
+        <% if (post.img) { %>
+            <img src="<%= post.img %>">
+        <% } else {%>
+            <p>No images in this post!</p>
+            <% } %>
+    <% } %>
+
+    <%- include("partials/footer.ejs") %>
+
+<script src="/js/bootstrap.min.js"></script>
+
+</body>
+</html>
